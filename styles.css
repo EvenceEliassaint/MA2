@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.song {
+    display: none;
+}
+
+
+
+/* Media Queries */
+@media (max-width: 500px) {
+    header{
+        color: white;
+    }
+    .video-small {
+        display: block;
+    }
+    .video-medium, .video-large {
+        display: none;
+    }
+    .song-small {
+        display: block;
+    }
+    .small-detail {
+        display: grid;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        color: white;
+    }
+    .artist-image img {
+        width: 200px;
+        height: auto;
+        justify-content: center;
+        margin: 10px;
+    }
+    .medium-detail, .Large-detail {
+        display: none;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 1023px) {
+    header{
+        color: white;
+    }
+    .video-medium {
+        display: block;
+    }
+    .song-medium {
+        display: block;
+    }
+    .medium-detail {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+        justify-content: center;
+        text-align: left;
+        align-items: center;
+        color: white;
+        margin: 10px;
+    }
+    .artist-image img {
+        width: 200px;
+        height: auto;
+        justify-content: center;
+    }
+    
+    .video-small, .video-large {
+        display: none;
+    }
+    .small-detail, .Large-detail {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .video-large {
+        display: block;
+    }
+    .song-large {
+        display: block;
+    }
+    .video-small, .video-medium {
+        display: none;
+    }
+    .Large-detail {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+        justify-content: center;
+        text-align: left;
+        align-items: center;
+        color: rgb(0, 0, 0);
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+    .small-detail, .medium-detail {
+        display: none;
+    }
+    .artist-image img {
+        width: 200px;
+        height: auto;
+        justify-content: center;
+    }
+}
