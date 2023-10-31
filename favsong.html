@@ -1,47 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Head Boilerplate -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Favorite Songs</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
+<!-- Beginning of body-->
 <body>
     <div class="container">
         <header>
             <h1>My Favorite Songs</h1>
         </header>
+
+        <!-- song embedds from spotify-->
         <div class="song song-large">
             <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/31er9IGsfFbwqy1pH4aiTP?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
         <div class="song song-medium">
             <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6ECp64rv50XVz93WvxXMGF?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
+        <div class="song song-medium2">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6QgjcU0zLnzq5OrUoSZ3OK?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
         <div class="song song-small">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0wOtc2nY3NOohp4xSwOyTN?utm_source=generator" 
-            width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-   
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0wOtc2nY3NOohp4xSwOyTN?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
     </div>
+
+        <!-- videos used as background from youtube-->
         <div class="background-video video-small">
             <video loop muted autoplay>
-                <source src="snow.mp4" type="video/mp4">
+                <source src="assets/images/snow.mp4" type="video/mp4">
             </video>
         </div>
         <div class="background-video video-medium">
             <video loop muted autoplay>
-                <source src="red.mp4" type="video/mp4">
+                <source src="assets/images/red.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="background-video video-medium2">
+            <video loop muted autoplay>
+                <source src="assets/images/fire2.mp4" type="video/mp4">
             </video>
         </div>
         <div class="background-video video-large">
             <video loop muted autoplay>
-                <source src="white.mp4" type="video/mp4">
+                <source src="assets/images/white.mp4" type="video/mp4">
             </video>
         </div>
+
+        <!-- description with artist name, song name, and why I love this song-->
         <div class="song-description small-detail">
             <div class="artist-image">
-                <img src="vm.webp" alt="Artist Name">
+                <img src="assets/images/vm.webp" alt="Artist Name">
             </div>
             <div class="details">
                 <h2>We Might Be Falling In Love</h2>
@@ -51,7 +65,7 @@
         </div>
         <div class="song-description medium-detail">
             <div class="artist-image">
-                <img src="m5.jpg" alt="Artist Name">
+                <img src="assets/images/m5.jpg" alt="Artist Name">
             </div>
             <div class="details">
                 <h2>This Love</h2>
@@ -59,9 +73,19 @@
                 <p>Why I Love the Song: As a HUGE Maroon 5 fan, I throughly enjoy everything they put out. But there is something special in this song. The smooth guitar melody will make you bop your head no matter what mood you are in. The lyrics (although a little sad) are fun to sing along too. All in all, this song is very catchy and a song I sing in the shower DAILY.</p>
             </div>
         </div>
+        <div class="song-description medium2-detail">
+            <div class="artist-image">
+                <img src="assets/images/ptm.jpg" alt="Artist Name">
+            </div>
+            <div class="details">
+                <h2>Feel It Still</h2>
+                <p>Portugual, The Man</p>
+                <p>>Why I Love the Song: This song makes me feel like I'm in a race movie. I love the feeling that this song gives me in my soul. It really feels like a high-speed chase and I love it.</p>
+            </div>
+        </div>
         <div class="song-description Large-detail">
             <div class="artist-image">
-                <img src="wh.webp" alt="Artist Name">
+                <img src="assets/images/wh.webp" alt="Artist Name">
             </div>
             <div class="details">
                 <h2>I Have Nothing</h2>
@@ -69,7 +93,6 @@
                 <p>Why I Love the Song: This is easily one of the greatest songs to ever be put out. In my opinion, this is Whitney Houston's best body of work. She displays her amazing vocal range in this song and even has an amazing key change to end the song. I love the songs lyrics and although I cant sing like her, it's hard not to sing along with her. This song feels like a beautiful letter and has gotton me thorugh some hard times. That is why I love this song.</p>
             </div>
         </div>
-    </div>
 </body>
 
 </html>
